@@ -15,14 +15,18 @@ No dataset was provided with the internship brief. This project therefore create
 - `run_segmentation.js` - creates the dataset, applies K-means clustering, and writes every output.
 - `data/synthetic_customer_profiles.csv` - 900 synthetic customer profiles.
 - `outputs/segmentation_summary.json` - reproducible segment metrics and recommendations.
+- `outputs/cluster_selection.md` - elbow and silhouette evidence supporting k = 4.
+- `outputs/cluster_projection.svg` - a 2D RFM segment projection.
+- `customer_segmentation_notebook.ipynb` - notebook-style walkthrough of the pipeline and conclusions.
 - `segmentation_report.html` - a polished, presentation-ready report.
 
 ## Method
 
 1. Generate customer-level behavioural features: recency, frequency, monetary value, average order value, discount affinity, and support contacts.
 2. Standardize the clustering features.
-3. Apply deterministic K-means with four clusters.
-4. Profile each cluster and turn the results into practical actions.
+3. Compare k = 2 through k = 6 using within-cluster sum of squares (Elbow) and silhouette evidence; select k = 4.
+4. Apply deterministic K-means with four clusters after standardisation.
+5. Profile each cluster and turn the results into practical actions.
 
 ## Run locally
 
