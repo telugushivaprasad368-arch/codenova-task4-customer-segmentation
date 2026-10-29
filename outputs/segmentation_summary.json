@@ -1,0 +1,65 @@
+{
+  "title": "Customer Segmentation Study",
+  "method": "Deterministic K-means clustering on standardized behavioural features",
+  "customer_count": 900,
+  "cluster_count": 4,
+  "features": [
+    "recency_days",
+    "orders_12m",
+    "spend_12m",
+    "avg_order_value",
+    "discount_share",
+    "support_contacts"
+  ],
+  "generated_on": "2026-10-29",
+  "segments": [
+    {
+      "segment": "Champions",
+      "customers": 197,
+      "share_pct": 21.89,
+      "avg_recency_days": 13.29,
+      "avg_orders_12m": 21.18,
+      "avg_spend_12m": 4526.18,
+      "avg_order_value": 217.23,
+      "avg_discount_share": 7.12,
+      "avg_support_contacts": 1.24,
+      "recommended_action": "Protect and reward: early access, premium service, and referral offers."
+    },
+    {
+      "segment": "Core shoppers",
+      "customers": 260,
+      "share_pct": 28.89,
+      "avg_recency_days": 27.85,
+      "avg_orders_12m": 11.08,
+      "avg_spend_12m": 1441.01,
+      "avg_order_value": 135.45,
+      "avg_discount_share": 12.52,
+      "avg_support_contacts": 1.78,
+      "recommended_action": "Grow carefully: personalised cross-sell bundles and loyalty milestones."
+    },
+    {
+      "segment": "Value explorers",
+      "customers": 239,
+      "share_pct": 26.56,
+      "avg_recency_days": 41.62,
+      "avg_orders_12m": 6.8,
+      "avg_spend_12m": 622.39,
+      "avg_order_value": 98.53,
+      "avg_discount_share": 28.95,
+      "avg_support_contacts": 1.93,
+      "recommended_action": "Convert with value: targeted bundles, threshold offers, and category discovery."
+    },
+    {
+      "segment": "Reactivation candidates",
+      "customers": 204,
+      "share_pct": 22.67,
+      "avg_recency_days": 122.5,
+      "avg_orders_12m": 2.88,
+      "avg_spend_12m": 249.65,
+      "avg_order_value": 90.38,
+      "avg_discount_share": 16.97,
+      "avg_support_contacts": 2.81,
+      "recommended_action": "Win back: time-limited reactivation offers and preference refresh campaigns."
+    }
+  ]
+}
